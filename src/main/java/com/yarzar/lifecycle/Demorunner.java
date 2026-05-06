@@ -19,5 +19,11 @@ public class Demorunner implements CommandLineRunner {
         } catch (Exception e) {
             System.out.println(">> EXCEPTION OCCURRED");
         }
+
+        try {
+            this.userService.selfInvoke();
+        } catch (Exception e) {
+            System.out.println(">> EXCEPTION OCCURRED");
+        }
     }
 }

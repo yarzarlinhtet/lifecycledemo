@@ -37,6 +37,11 @@ public class UserService {
 
     }
 
+    public void selfInvoke() {
+        System.out.println(">> SELENE USER SERVICE");
+        this.createUser();
+    }
+
     @PreDestroy
     public void destroy() {
         System.out.println(">> DESTROY USER SERVICE");
